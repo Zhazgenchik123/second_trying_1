@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+}
+header {
+  width: 100%;
+}
+.nav1 {
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.2px solid black;
+}
+.nav1 ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+.nav1 ul li {
+  padding: 15px 10px;
+}
+.nav1 ul li a {
+  font-size: 1rem;
+}
+.nav2 {
+  width: 100%;
+  background-color: aliceblue;
+}
+.nav2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 70%;
+}
+.nav2 ul li {
+  padding: 15px 10px;
+}
+.nav2 ul li a {
+  font-size: 1.2rem;
+}
+.nav2 ul li input {
+    width: 350px;
+    padding: 10px;
+    border-radius: 40px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.432);
+    background-color: aliceblue;
+}
+.bg_img {
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 95%;
+
+  margin-top: 15px;
+  margin-left: 50px;
+
+}
+
+.centered {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+h1.centered{
+    color: white;
+  font-size: 3.5rem;
+
+
+}
+p.centered{
+    font-size: 2rem;
+  color: white;
+    top: 90%;
+    left: 32.5%;
+}
+box_1{
+
+  height: 450px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.container {
+  width: 100%;
+}
+
+.sect {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 0;
+}
+.sect article {
+  width: 450px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 50px 0;
+}
+.sect article p {
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.8;
+}
+h2.char{
+    margin-top: -10%;
+    margin-left: 22%;
+    font-size: 3.2rem;
+}
+ul.list{
+    margin-top: 10px;
+}
+
+ul.list li{
+    font-size: 2rem;
+    margin-left: 26%;
+    margin-top: 19px;
+}
+div.obj{
+    
+    margin-top: 40px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.articles_heading{
+    font-size: 2.2rem;
+}
+p.text_1{
+    font-size: 1.5rem;
+
+
+}
+p{
+    font-size: 1.5rem;
+    width: 92%;
+}
+img.image_1{
+    width: 90%;
+}

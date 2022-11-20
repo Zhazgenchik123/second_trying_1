@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block content %}
+
+        <header>
+          <nav class="nav1">
+            <div><h2>LOGO</h2></div>
+            <ul>
+              <li><a href="#">Hosting</a></li>
+              <li><a href="#">VPS</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Domain</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Cart</a></li>
+            </ul>
+          </nav>
+          <nav class="nav2">
+            <ul>
+              <li><a href="#">Hosting</a></li>
+              <li><a href="#">VPS</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Domain</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><input type="text" placeholder="search" /></li>
+            </ul>
+          </nav>
+        </header>
+    {% endblock %}
+    <div>
+        <div class="box_1">
+            <img src="{% static 'home/img/pexels-josh-sorenson-1714208.jpg' %}" alt="картинка" class="bg_img">
+
+            <h1 class="centered">
+                10 Best Programming Languages to Learn in 2022: Scale Your Web
+                Development Skills
+            </h1>
+              <p class="centered">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+    </div>
+    <section class="container">
+        <div class="sect">
+          <article>
+            <p>
+              As far as web and software development goes, Python, followed by
+              Java, JavaScript, and C++, are among the most popular programming
+              languages in today’s market.
+            </p>
+          </article>
+          <article>
+            <p>
+              Whether you’re looking to improve your coding skills or start a
+              career in technology, learning a coding language can bring many
+              benefits. It helps hone your technical and problem-solving skills
+              and get a high-paying job.
+            </p>
+          </article>
+          <article>
+            <p>
+              With over 700 programming languages to choose from, it may be
+              challenging to decide which one to learn first. While it will
+              finally come down to what you’re trying to build with it, this
+              article covers the ten best programming languages to learn in
+              2022.
+            </p>
+          </article>
+        </div>
+    </section>
+    <br><br><br>
+    <div>
+        <h2 class="char">What Are the Best Programming Languages to Learn in 2022?</h2>
+    <ul class="list">
+        <li><a href="#">Python</a></li>
+        <li><a href="#">C#</a></li>
+        <li><a href="#">C++</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">Swift</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Go</a></li>
+        <li><a href="#">SQL</a></li>
+        <li><a href="#">Ruby</a></li>
+    </ul>
+    </div>
+    {% for el in art %}
+        <div class="obj">
+            <h2 class="articles_heading">{{el.title}}</h2>
+            <img src="{{ el.image.url }}" alt="image" class="image_1"><br>
+            <p class="text_1">{{ el.full_text_1 }}</p><br>
+            <p class="text_1">{{ el.full_text_2 }}</p><br>
+            <p class="text_1">{{ el.full_text_3 }}</p><br>
+            <p class="text_1">{{ el.full_text_4 }}</p><br>
+            <p class="text_1">{{ el.full_text_5 }}</p><br>
+            <p class="text_1">{{ el.full_text_6 }}</p><br>
+            <a href="index_id/<int:id>/">Тыкни сюда</a>
+        </div>
+    {% endfor %}
+
+
+</body>
+</html>
